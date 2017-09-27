@@ -1,0 +1,10 @@
+/.git
+/.gitignore
+/.dockerignore
+/doc
+/.vscode
+/node_modules
+/Dockerfile*
+/*.ps1
+/*.sh
+/docker-compose*.yaml

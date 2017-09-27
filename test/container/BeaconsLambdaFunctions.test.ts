@@ -8,10 +8,8 @@ import { PagingParams } from 'pip-services-commons-node';
 import { ConfigParams } from 'pip-services-commons-node';
 import { References } from 'pip-services-commons-node';
 import { Descriptor } from 'pip-services-commons-node';
-
 import { BeaconsMemoryPersistence } from '../../src/persistence/BeaconsMemoryPersistence';
 import { BeaconsController } from '../../src/logic/BeaconsController';
-
 import { BeaconV1 } from '../../src/data/version1/BeaconV1';
 import { BeaconsLambdaFunctions } from '../../src/container/BeaconsLambdaFunction';
 

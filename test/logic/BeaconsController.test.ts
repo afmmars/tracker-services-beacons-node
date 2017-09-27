@@ -197,42 +197,42 @@ suite('BeaconsController', () => {
                     }
                 )
             },
-            // calculate position
-            (callback) => {
-                controller.calculatePosition(
-                    null,
-                    '1',
-                    ['0000001'],
-                    (err, position) => {
-                        assert.isNull(err);
+            // // calculate position
+            // (callback) => {
+            //     controller.calculatePosition(
+            //         null,
+            //         '1',
+            //         ['0000001'],
+            //         (err, position) => {
+            //             assert.isNull(err);
 
-                        assert.isObject(position);
-                        assert.equal(position.type, 'Point');
-                        assert.equal(position.coordinates[0], 0);
-                        assert.equal(position.coordinates[0], 0);
+            //             assert.isObject(position);
+            //             assert.equal(position.type, 'Point');
+            //             assert.equal(position.coordinates[0], 0);
+            //             assert.equal(position.coordinates[0], 0);
 
-                        callback();
-                    }
-                )
-            },
-            // calculate position 2 item
-            (callback) => {
-                controller.calculatePosition(
-                    null,
-                    '1',
-                    ['0000001', '0000002'],
-                    (err, position) => {
-                        assert.isNull(err);
+            //             callback();
+            //         }
+            //     )
+            // },
+            // // calculate position 2 item
+            // (callback) => {
+            //     controller.calculatePosition(
+            //         null,
+            //         '1',
+            //         ['0000001', '0000002'],
+            //         (err, position) => {
+            //             assert.isNull(err);
 
-                        assert.isObject(position);
-                        assert.equal(position.type, 'Point');
-                        assert.equal(position.coordinates[0], 1);
-                        assert.equal(position.coordinates[0], 1);
+            //             assert.isObject(position);
+            //             assert.equal(position.type, 'Point');
+            //             assert.equal(position.coordinates[0], 1);
+            //             assert.equal(position.coordinates[0], 1);
 
-                        callback();
-                    }
-                )
-            }            
+            //             callback();
+            //         }
+            //     )
+            // }            
         ], done);
     });
 })

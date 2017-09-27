@@ -7,7 +7,8 @@
   "scripts": {
     "build": "tsc",
     "watch": "tsc --watch",
-    "test": "mocha -t 5000 -R spec -u tdd --recursive ./obj/test"
+    "test": "mocha -t 5000 -R spec -u tdd --recursive ./obj/test",
+    "test-tc": "mocha -t 5000 -R mocha-teamcity-reporter -u tdd --recursive ./obj/test"
   },
   "repository": {
     "type": "git",
@@ -35,6 +36,7 @@
     "@types/mocha": "*",
     "chai": "*",
     "mocha": "*",
-    "restify": "^4.3.0"
+    "restify": "^4.3.0",
+    "mocha-teamcity-reporter": "^1.1.1"
   }
 }

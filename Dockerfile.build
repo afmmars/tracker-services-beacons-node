@@ -1,0 +1,15 @@
+FROM pipdevs/ts-dev:2.5.2
+
+#set workdir directory
+WORKDIR /app
+
+#copy project file
+COPY package.json .
+
+#install ALL node_modules
+RUN npm install
+
+COPY . .
+
+#compiler
+RUN tsc

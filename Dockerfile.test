@@ -1,0 +1,13 @@
+FROM pipdevs/node:8.4.0
+
+#set workdir directory
+WORKDIR /app
+
+#copy project file
+COPY package.json .
+
+#install ALL node_modules
+RUN npm install
+
+#copy entire project
+COPY . .

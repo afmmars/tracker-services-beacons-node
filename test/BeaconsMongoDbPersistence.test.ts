@@ -12,7 +12,7 @@ suite('BeaconsMongoDbPersistence', () => {
     let mongoHost = process.env['MONGO_HOST'] || 'localhost';
     let MongoPort = process.env['MONGO_PORT'] || 27017;
     let MongoDatabase = process.env['MONGO_DB'] || 'test';
-    if (mongoUri == null && mongoHost == null) return;
+    if (mongoUri == '' && mongoHost == '') return;
 
     setup((done) => {
         persistance = new BeaconsMongoDbPersistence();
