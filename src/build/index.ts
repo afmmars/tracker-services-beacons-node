@@ -1,2 +1,2 @@
 
-import { BeaconsServiceFactory } from './BeaconsServiceFactory';
+export { BeaconsServiceFactory } from './BeaconsServiceFactory';

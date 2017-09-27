@@ -1,1 +1,1 @@
-import { IBeaconsController } from './IBeaconsController';
+export { IBeaconsController } from './IBeaconsController';

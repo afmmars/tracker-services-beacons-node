@@ -1,4 +1,4 @@
-import { IBeaconsPersistence } from './IBeaconsPersistence';
-import { BeaconsMemoryPersistence } from './BeaconsMemoryPersistence';
-import { BeaconsMongoDbPersistence } from './BeaconsMongoDbPersistence'
-import { BeaconsFilePersistence } from './BeaconsFilePersistence'
+export { IBeaconsPersistence } from './IBeaconsPersistence';
+export { BeaconsMemoryPersistence } from './BeaconsMemoryPersistence';
+export { BeaconsMongoDbPersistence } from './BeaconsMongoDbPersistence'
+export { BeaconsFilePersistence } from './BeaconsFilePersistence'
