@@ -1,0 +1,29 @@
+---
+#console loger
+- descriptor: "pip-services-commons:logger:console:default:1.0"
+  level: trace
+
+  #Perfomance counters
+- descriptor: "pip-services-commons:counters:log:default:1.0"
+  level: trace
+
+
+#   #In-memory persistence
+# - descriptor: "tracker-services-beacons:persistence:memory:default:1.0"
+
+  #File persistence
+- descriptor: "tracker-services-beacons:persistence:file:default:1.0"
+  path: "./data/beacons.json"
+
+  #mongoDb persistence
+# - descriptor: "tracker-services-beacons:persistence:memory:default:1.0"
+
+  #Default controller
+- descriptor: "tracker-services-beacons:controller:default:default:1.0"
+
+  #Http endpoint version 1.0
+- descriptor: "tracker-services-beacons:service:http:default:1.0"
+  connection: 
+    protocol: http
+    host: 0.0.0.0
+    port": 8080

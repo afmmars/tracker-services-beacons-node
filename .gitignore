@@ -1,0 +1,6 @@
+/node_modules
+/npm-debug.log
+/data/beacons.test.json
+/data/beacons.json
+/obj/test
+/config/config.yaml

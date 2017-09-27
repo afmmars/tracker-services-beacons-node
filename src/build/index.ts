@@ -1,0 +1,2 @@
+
+import { BeaconsServiceFactory } from './BeaconsServiceFactory';
