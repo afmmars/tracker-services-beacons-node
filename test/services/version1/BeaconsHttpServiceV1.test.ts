@@ -106,7 +106,7 @@ suite('BeaconsHttpServiceV1', () => {
                 )
             },
             (callback) => {
-                rest.post('beacons/create_beacon',
+                rest.post('/beacons/create_beacon',
                     {
                         beacon: BEACON2
                     },
@@ -122,9 +122,9 @@ suite('BeaconsHttpServiceV1', () => {
                         callback();
                     }
                 )
-            },
+            }
             // (callback) => {
-            //     rest.post('beacons/get_beacons',
+            //     rest.post('/beacons/get_beacons',
             //         {},
             //         (err, req, res, page) => {
             //             assert.isNull(err);
@@ -140,7 +140,7 @@ suite('BeaconsHttpServiceV1', () => {
             // (callback) => {
             //     beacon1.label = 'ABC';
 
-            //     rest.post('beacons/update_beacons',
+            //     rest.post('/beacons/update_beacons',
             //         {
             //             beacon: BEACON1
             //         },
@@ -156,7 +156,7 @@ suite('BeaconsHttpServiceV1', () => {
             //     )
             // },
             // (callback) => {
-            //     rest.post('beacons/delete_beacon_by_id',
+            //     rest.post('/beacons/delete_beacon_by_id',
             //         {
             //             beacon_id: beacon1.id
             //         },
@@ -169,7 +169,7 @@ suite('BeaconsHttpServiceV1', () => {
             //     )
             // },
             // (callback) => {
-            //     rest.post('beacons/get_beacon_by_id',
+            //     rest.post('/beacons/get_beacon_by_id',
             //         {
             //             beacon_id: beacon1.id
             //         },

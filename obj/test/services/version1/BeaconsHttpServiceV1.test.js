@@ -73,7 +73,7 @@ suite('BeaconsHttpServiceV1', () => {
                 });
             },
             (callback) => {
-                rest.post('beacons/create_beacon', {
+                rest.post('/beacons/create_beacon', {
                     beacon: BEACON2
                 }, (err, req, res, beacon) => {
                     assert.isNull(err);
@@ -84,7 +84,59 @@ suite('BeaconsHttpServiceV1', () => {
                     assert.isNotNull(beacon.center);
                     callback();
                 });
-            },
+            }
+            // (callback) => {
+            //     rest.post('/beacons/get_beacons',
+            //         {},
+            //         (err, req, res, page) => {
+            //             assert.isNull(err);
+            //             assert.isObject(page);
+            //             assert.lengthOf(page.data, 2);
+            //             beacon1 = page.data[0];
+            //             callback();
+            //         }
+            //     )
+            // },
+            // (callback) => {
+            //     beacon1.label = 'ABC';
+            //     rest.post('/beacons/update_beacons',
+            //         {
+            //             beacon: BEACON1
+            //         },
+            //         (err, req, res, beacon) => {
+            //             assert.isNull(err);
+            //             assert.isObject(beacon);
+            //             assert.equal(beacon.id, BEACON1.id);
+            //             assert.equal(beacon.label, 'ABC');
+            //             callback();
+            //         }
+            //     )
+            // },
+            // (callback) => {
+            //     rest.post('/beacons/delete_beacon_by_id',
+            //         {
+            //             beacon_id: beacon1.id
+            //         },
+            //         (err, req, res, beacon) => {
+            //             assert.isNull(err);
+            //             assert.isObject(beacon);
+            //             assert.equal(beacon.id, BEACON1.id);
+            //             callback();
+            //         }
+            //     )
+            // },
+            // (callback) => {
+            //     rest.post('/beacons/get_beacon_by_id',
+            //         {
+            //             beacon_id: beacon1.id
+            //         },
+            //         (err, req, res, beacon) => {
+            //             assert.isNull(err);
+            //             // assert.isNull(beacon);
+            //             callback();
+            //         }
+            //     )
+            // }
         ], done);
     });
     // test('Test GetWithFilters operation', (done) => {
