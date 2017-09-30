@@ -14,9 +14,8 @@ set -o pipefail
 # git push --tags
 
 #push production to docker registry
-# docker login -u $DOCKER_USER -p $DOCKER_PASS 
-docker login -u anastas -p KprSQ4iZ77
-# todo set user env
+docker login -u $DOCKER_USER -p $DOCKER_PASS 
+# docker login -u anastas -p KprSQ4iZ77
 docker push $IMAGE1
 docker push $IMAGE2
 
